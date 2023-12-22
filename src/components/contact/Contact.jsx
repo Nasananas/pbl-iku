@@ -43,7 +43,7 @@ function Contact() {
       const confirmDelete = window.confirm("Apakah Anda yakin ingin menghapus kontak?");
       if (confirmDelete) {
           try {
-              await axios.delete(`http://localhost:8080/Delete/user/${id}`);
+              await axios.delete(`http://localhost:8080/Delete-user/${id}`);
               getContacts();
           } catch (error) {
               console.error('Error deleting contact:', error);
@@ -57,7 +57,7 @@ function Contact() {
 
       try {
           const putData = await axios.put(
-              `http://localhost:8080/Update/user/${id}`,
+              `http://localhost:8080/Update-user/${id}`,
               {
                   nama: nama,
                   keterangan: keterangan,
@@ -140,7 +140,7 @@ function Contact() {
 
           <div>
               <caption className="table-caption">Riwayat Penyewaan</caption>
-              <Link to={'/AddUser'} className='custom-button'> Tambah Data </Link>
+              <Link to={'/add'} className='custom-button'> Tambah Data </Link>
               <table className="table-container">
                   <thead>
                       <tr>

@@ -9,8 +9,10 @@ import Contact from "../contact/Contact";
 import SignIn from "../signin/signin";
 import SignUp from "../Signup/signup";
 import Sewa from "../sewa/sewa";
+import AddUser from "../contact/AddUser";
+import Edit from "../contact/EditUser";
 
-const Pages = () => {
+function Pages() {
   return (
     <>
       <Router>
@@ -23,11 +25,13 @@ const Pages = () => {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/sewa" element={<Sewa />} />
+          <Route path="/add" element={<AddUser />} />
+          <Route path="/update/:id" element={<Edit />} />
         </Routes>
         <Footer />
       </Router>
     </>
   );
-};
+}
 
 export default Pages;
