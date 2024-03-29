@@ -1,25 +1,27 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import '../signin/signin.css';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // useHistory diganti dengan useNavigate
+import './signin.css'; // Tambahkan stylesheet SignIn
 
 const SignIn = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // useHistory diganti dengan useNavigate
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(false); // State untuk "Remember Me"
 
-  const handleSignIn = () => {
-    // Logika autentikasi atau pengiriman data ke server dapat ditambahkan di sini
-    console.log("Email:", email);
-    console.log("Password:", password);
+  const handleSignIn = (e) => {
+    e.preventDefault();
+    console.log('Email:', email);
+    console.log('Password:', password);
+    console.log('Remember Me:', rememberMe);
 
     // Redirect ke halaman home setelah berhasil sign-in
-    navigate("/");
+    navigate('/'); // useHistory diganti dengan navigate
   };
 
   return (
     <div className="signin-container">
       <h2>Sign In</h2>
-      <form>
+      <form onSubmit={handleSignIn}>
         <div className="form-group">
           <label>Email:</label>
           <input
@@ -36,13 +38,17 @@ const SignIn = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="button" onClick={handleSignIn}>
-          Sign In
-        </button>
+        <div className="form-group">
+          <input
+            type="checkbox"
+            id="rememberMe"
+            checked={rememberMe}
+            onChange={(e) => setRememberMe(e.target.checked)}
+          />
+          <label htmlFor="rememberMe">Remember Me</label>
+        </div>
+        <button type="submit">Masuk</button>
       </form>
-      <p>
-        Don't have an account? <Link to="/signup">Sign Up</Link>
-      </p>
     </div>
   );
 };

@@ -22,11 +22,7 @@ const Header = () => {
               ))}
             </ul>
           </div>
-          <div className='button flex'>
-            <Link to="/signin" className='btn1'>
-              <i className='fa fa-sign-out'></i> Sign In
-            </Link>
-          </div>
+
 
           <div className='toggle'>
             <button onClick={() => setNavList(!navList)}>{navList ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}</button>

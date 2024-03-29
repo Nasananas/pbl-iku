@@ -4,11 +4,7 @@ export const nav = [
     path: "/",
   },
   {
-    text: "about",
-    path: "/about",
-  },
-  {
-    text: "services",
+    text: "indikator",
     path: "/services",
   },
   {
@@ -19,77 +15,33 @@ export const nav = [
 export const featured = [
   {
     cover: "../images/hero/h1.png",
-    name: "Desain sesuai dan Terbaik",
+    name: "Lulusan mendapat pekerjaan yang layak",
   },
   {
     cover: "../images/hero/h2.png",
-    name: "Harga Terjangkau",
+    name: "Mahasiswa mendapat pengalaman diluar prodi",
   },
   {
     cover: "../images/hero/h3.png",
-    name: "Pengiriman Cepat",
+    name: "Dosen berkegiatan diluar kampus",
   },
   {
     cover: "../images/hero/h4.png",
-    name: "Jasa Desain gratis",
+    name: "Dosen/praktisi mengajar di dalam kampus",
+  },
+  {
+    cover: "../images/hero/h5.png",
+    name: "Hasil kerja dosen digunakan oleh masyarakat",
+  },
+  {
+    cover: "../images/hero/h6.png",
+    name: "Kemitraan prodi",
+  },
+  {
+    cover: "../images/hero/h7.png",
+    name: "Dosen menggunakan kelas kolaboratif dan partisipatif",
   },
 
-]
-export const list = [
-  {
-    id: 1,
-    cover: "../images/list/p-1.png",
-    name: "Red Carpet Real Estate",
-    location: "210 Zirak Road, Canada",
-    category: "For Rent",
-    price: "Sewa",
-    type: "Apartment",
-  },
-  {
-    id: 2,
-    cover: "../images/list/p-2.png",
-    name: "Fairmount Properties",
-    location: "5698 Zirak Road, NewYork",
-    category: "For Sale",
-    price: "Sewa",
-    type: "Condos",
-  },
-  {
-    id: 3,
-    cover: "../images/list/p-7.png",
-    name: "The Real Estate Corner",
-    location: "5624 Mooker Market, USA",
-    category: "For Rent",
-    price: "Sewa",
-    type: "Offices",
-  },
-  {
-    id: 4,
-    cover: "../images/list/p-4.png",
-    name: "Herringbone Realty",
-    location: "5621 Liverpool, London",
-    category: "For Sale",
-    price: "Sewa",
-    type: "Homes & Villas",
-  },
-  {
-    id: 5,
-    cover: "../images/list/p-5.png",
-    name: "Brick Lane Realty",
-    location: "210 Montreal Road, Canada",
-    category: "For Rent",
-    price: "Sewa",
-    type: "Commercial",
-  },
-  {
-    id: 6,
-    cover: "../images/list/p-6.png",
-    name: "Banyon Tree Realty",
-    location: "210 Zirak Road, Canada",
-    category: "For Sale",
-    price: "Sewa",
-    type: "Apartment",
-  },
 ]
 
 export const footer = [
