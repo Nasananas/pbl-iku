@@ -8,7 +8,7 @@ const MaybeShowFooter = ({ children }) => {
 
     useEffect(() => {
         console.log('this is location: ', location);
-        if (location.pathname === '/signin') {
+        if (location.pathname === '/signin' || location.pathname === '/dashboard') {
             setShowFooter(false);
         } else {
             setShowFooter(true);

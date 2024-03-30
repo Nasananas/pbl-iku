@@ -4,11 +4,13 @@ import { useLocation } from 'react-router-dom';
 const MaybeShowHeader = ({ children }) => {
     const location = useLocation();
 
-    const [showHeader, setShowHeader] = useState(false);
+    const [showHeader, setShowHeader] = useState(true); // Secara default, tampilkan header
 
     useEffect(() => {
         console.log('this is location: ', location);
-        if (location.pathname === '/signin') {
+        // Tentukan path mana yang tidak ingin menampilkan header
+        if (location.pathname === '/signin' 
+        || location.pathname === '/dashboard') {
             setShowHeader(false);
         } else {
             setShowHeader(true);

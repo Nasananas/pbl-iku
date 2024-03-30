@@ -15,7 +15,7 @@ const SignIn = () => {
     console.log('Remember Me:', rememberMe);
 
     // Redirect ke halaman home setelah berhasil sign-in
-    navigate('/'); // useHistory diganti dengan navigate
+    navigate('/dashboard'); // useHistory diganti dengan navigate
   };
 
   return (

@@ -11,6 +11,7 @@ import AddUser from "../contact/AddUser";
 import Edit from "../contact/EditUser";
 import MaybeShowHeader from "../Maybe/MaybeShowHeader/MaybeShowHeader";
 import MaybeShowFooter from "../Maybe/MaybeShowFooter/MaybeShowFooter";
+import Dashboard from "../../dashboard/Dashboard";
 
 function Pages() {
   return (
@@ -24,6 +25,7 @@ function Pages() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/sewa" element={<Sewa />} />
           <Route path="/add" element={<AddUser />} />
           <Route path="/update/:id" element={<Edit />} />
