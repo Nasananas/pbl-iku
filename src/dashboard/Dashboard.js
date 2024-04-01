@@ -36,9 +36,7 @@ function Dashboard() {
                         {/*  <!-- Sidebar - Brand --> */}
                         <a className="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                             <div className="sidebar-brand-text mx-3">IKU</div>
-                            <div className="text-center d-none d-md-inline">
-                            <button className="rounded-circle border-0" id="sidebarToggle" onClick={changeStyle}></button>
-                        </div>
+                            
                         </a>
 
                         {/*   <!-- Divider --> */}
@@ -46,9 +44,13 @@ function Dashboard() {
 
                         {/*  <!-- Nav Item - Dashboard --> */}
                         <li className="nav-item active">
-                            <a className="nav-link" href="index.html">
-                                <i className="fas fa-fw fa-tachometer-alt"></i>
-                                <span>Dashboard</span></a>
+                            <a className="nav-link" href="index">
+                                <span>Home</span></a>
+                        </li>
+
+                        <li className="nav-item active">
+                            <a className="nav-link" href="rekap">
+                                <span>Rekapitulasi</span></a>
                         </li>
 
                         {/*  <!-- Divider --> */}
@@ -63,65 +65,25 @@ function Dashboard() {
                         <li className="nav-item">
                             <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                                 aria-expanded="true" aria-controls="collapseTwo">
-                                <i className="fas fa-fw fa-cog"></i>
-                                <span>Components</span>
+                                
+                                <span>Capaian IKU</span>
                             </a>
                             <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                                 <div className="bg-white py-2 collapse-inner rounded">
-                                    <h6 className="collapse-header">Custom Components:</h6>
-                                    <a className="collapse-item" href="buttons.html">Buttons</a>
-                                    <a className="collapse-item" href="cards.html">Cards</a>
-                                </div>
-                            </div>
-                        </li>
-
-                        {/* <!-- Nav Item - Utilities Collapse Menu --> */}
-                        <li className="nav-item">
-                            <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                                aria-expanded="true" aria-controls="collapseUtilities">
-                                <i className="fas fa-fw fa-wrench"></i>
-                                <span>Utilities</span>
-                            </a>
-                            <div id="collapseUtilities" className="collapse" aria-labelledby="headingUtilities"
-                                data-parent="#accordionSidebar">
-                                <div className="bg-white py-2 collapse-inner rounded">
-                                    <h6 className="collapse-header">Custom Utilities:</h6>
-                                    <a className="collapse-item" href="utilities-color.html">Colors</a>
-                                    <a className="collapse-item" href="utilities-border.html">Borders</a>
-                                    <a className="collapse-item" href="utilities-animation.html">Animations</a>
-                                    <a className="collapse-item" href="utilities-other.html">Other</a>
+                                    <h6 className="collapse-header">Pilih IKU</h6>
+                                    <a className="collapse-item" href="iku1">IKU 1</a>
+                                    <a className="collapse-item" href="iku2">IKU 2</a>
+                                    <a className="collapse-item"href="iku3">IKU 3</a>
+                                    <a className="collapse-item">IKU 4</a>
+                                    <a className="collapse-item">IKU 5</a>
+                                    <a className="collapse-item">IKU 6</a>
+                                    <a className="collapse-item">IKU 7</a>
                                 </div>
                             </div>
                         </li>
 
                         {/*  <!-- Divider --> */}
                         <hr className="sidebar-divider" />
-
-                        {/* <!-- Heading --> */}
-                        <div className="sidebar-heading">
-                            Addons
-                        </div>
-
-                        {/*  <!-- Nav Item - Pages Collapse Menu --> */}
-                        <li className="nav-item">
-                            <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                                aria-expanded="true" aria-controls="collapsePages">
-                                <i className="fas fa-fw fa-folder"></i>
-                                <span>Pages</span>
-                            </a>
-                            <div id="collapsePages" className="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                                <div className="bg-white py-2 collapse-inner rounded">
-                                    <h6 className="collapse-header">Login Screens:</h6>
-                                    <a className="collapse-item" href="login.html">Login</a>
-                                    <a className="collapse-item" href="register.html">Register</a>
-                                    <a className="collapse-item" href="forgot-password.html">Forgot Password</a>
-                                    <div className="collapse-divider"></div>
-                                    <h6 className="collapse-header">Other Pages:</h6>
-                                    <a className="collapse-item" href="404.html">404 Page</a>
-                                    <a className="collapse-item" href="blank.html">Blank Page</a>
-                                </div>
-                            </div>
-                        </li>
 
                         {/* <!-- Nav Item - Charts --> */}
                         <li className="nav-item">
@@ -141,17 +103,9 @@ function Dashboard() {
                         <hr className="sidebar-divider d-none d-md-block" />
 
                         {/*   <!-- Sidebar Toggler (Sidebar) --> */}
-                      {/*   <div className="text-center d-none d-md-inline">
+                        <div className="text-center d-none d-md-inline">
                             <button className="rounded-circle border-0" id="sidebarToggle" onClick={changeStyle}></button>
-                        </div> */}
-
-                        {/*  <!-- Sidebar Message --> */}
-                        <div className="sidebar-card d-none d-lg-flex">
-                            <img className="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="..." />
-                            <p className="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                            <a className="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-                        </div>
-
+                        </div> 
                     </ul>
                     {/*  <!-- End of Sidebar --> */}
 
@@ -215,8 +169,6 @@ function Dashboard() {
                                         <a className="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i className="fas fa-bell fa-fw"></i>
-                                            {/*  <!-- Counter - Alerts --> */}
-                                            <span className="badge badge-danger badge-counter">3+</span>
                                         </a>
                                         {/*   <!-- Dropdown - Alerts --> */}
                                         <div className="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -266,8 +218,6 @@ function Dashboard() {
                                         <a className="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i className="fas fa-envelope fa-fw"></i>
-                                            {/*  <!-- Counter - Messages --> */}
-                                            <span className="badge badge-danger badge-counter">7</span>
                                         </a>
                                         {/*   <!-- Dropdown - Messages --> */}
                                         <div className="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -333,7 +283,7 @@ function Dashboard() {
                                     <li className="nav-item dropdown no-arrow">
                                         <a className="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span className="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                            <span className="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                             <img className="img-profile rounded-circle"
                                                 src="img/undraw_profile.svg" />
                                         </a>
@@ -347,10 +297,6 @@ function Dashboard() {
                                             <a className="dropdown-item" href="#">
                                                 <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                                 Settings
-                                            </a>
-                                            <a className="dropdown-item" href="#">
-                                                <i className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                                Activity Log
                                             </a>
                                             <div className="dropdown-divider"></div>
                                             <a className="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -669,21 +615,6 @@ function Dashboard() {
                                                     unDraw &rarr;</a>
                                             </div>
                                         </div>
-
-                                        {/* <!-- Approach --> */}
-                                        <div className="card shadow mb-4">
-                                            <div className="card-header py-3">
-                                                <h6 className="m-0 font-weight-bold text-primary">Development Approach</h6>
-                                            </div>
-                                            <div className="card-body">
-                                                <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classNamees in order to reduce
-                                                    CSS bloat and poor page performance. Custom CSS classNamees are used to create
-                                                    custom components and custom utility classNamees.</p>
-                                                <p className="mb-0">Before working with this theme, you should become familiar with the
-                                                    Bootstrap framework, especially the utility classNamees.</p>
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
 
@@ -693,7 +624,7 @@ function Dashboard() {
                         </div>
                         {/*   <!-- End of Main Content -->
 
-                                        <!-- Footer --> */}
+                        {/*  <!-- Footer --> */}
                         <footer className="sticky-footer bg-white">
                             <div className="container my-auto">
                                 <div className="copyright text-center my-auto">
@@ -720,15 +651,15 @@ function Dashboard() {
                     <div className="modal-dialog" role="document">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <h5 className="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                <h5 className="modal-title" id="exampleModalLabel">Kamu yakin ingi keluar?</h5>
                                 <button className="close" type="button" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
                             </div>
                             <div className="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                             <div className="modal-footer">
-                                <button className="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                <a className="btn btn-primary" href="login.html">Logout</a>
+                                <button className="btn btn-secondary" type="button" data-dismiss="modal">Kembali</button>
+                                <a className="btn btn-primary" href="login.html">Keluar</a>
                             </div>
                         </div>
                     </div>

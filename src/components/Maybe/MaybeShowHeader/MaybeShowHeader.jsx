@@ -10,7 +10,12 @@ const MaybeShowHeader = ({ children }) => {
         console.log('this is location: ', location);
         // Tentukan path mana yang tidak ingin menampilkan header
         if (location.pathname === '/signin' 
-        || location.pathname === '/dashboard') {
+        || location.pathname === '/dashboard'
+        || location.pathname === '/index'
+        || location.pathname === '/rekap'
+        || location.pathname === '/iku1'
+        || location.pathname === '/iku2'
+        || location.pathname === '/iku3') {
             setShowHeader(false);
         } else {
             setShowHeader(true);
